@@ -1,0 +1,198 @@
+.css-chart {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    height: var(--widget-size);
+    margin: 1em;
+    padding: 0;
+    position: relative;
+    width: var(--widget-size);
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+}
+
+.line-chart {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.data-point {
+    background-color: lightblue;
+    border: 2px solid lightseagreen;
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+}
+
+.line-segment {
+    background-color: blue;
+    height: 3px;
+    position: absolute;
+}
+
+.graphs {
+    display: flex;
+}
+
+.graph {
+    flex: 1;
+}
+
+.l0 {
+    transform: rotate(0deg);
+    transform-origin: left bottom;
+}
+
+.l1 {
+    transform: rotate(22deg);
+    transform-origin: left bottom;
+}
+
+.l2 {
+    transform: rotate(39deg);
+    transform-origin: left bottom;
+}
+
+.l3 {
+    transform: rotate(51deg);
+    transform-origin: left bottom;
+}
+
+.l4 {
+    transform: rotate(59deg);
+    transform-origin: left bottom;
+}
+
+.l5 {
+    transform: rotate(64deg);
+    transform-origin: left bottom;
+}
+
+.l6 {
+    transform: rotate(68.5deg);
+    transform-origin: left bottom;
+}
+
+.l7 {
+    transform: rotate(71deg);
+    transform-origin: left bottom;
+}
+
+.l8 {
+    transform: rotate(73.2deg);
+    transform-origin: left bottom;
+}
+
+.l9 {
+    transform: rotate(75.4deg);
+    transform-origin: left bottom;
+}
+
+.l10 {
+    transform: rotate(76.7deg);
+    transform-origin: left bottom;
+}
+
+.l11 {
+    transform: rotate(77.5deg);
+    transform-origin: left bottom;
+}
+
+.l12 {
+    transform: rotate(78.7deg);
+    transform-origin: left bottom;
+}
+
+.l13 {
+    transform: rotate(79.5deg);
+    transform-origin: left bottom;
+}
+
+.l14 {
+    transform: rotate(80.3deg);
+    transform-origin: left bottom;
+}
+
+.l15 {
+    transform: rotate(81deg);
+    transform-origin: left bottom;
+}
+
+.ln1 {
+    transform: rotate(338deg);
+    transform-origin: left bottom;
+}
+
+.ln2 {
+    transform: rotate(320deg);
+    transform-origin: left bottom;
+}
+
+.ln3 {
+    transform: rotate(309deg);
+    transform-origin: left bottom;
+}
+
+.ln4 {
+    transform: rotate(301deg);
+    transform-origin: left bottom;
+}
+
+.ln5 {
+    transform: rotate(296deg);
+    transform-origin: left bottom;
+}
+
+.ln6 {
+    transform: rotate(292deg);
+    transform-origin: left bottom;
+}
+
+.ln7 {
+    transform: rotate(289deg);
+    transform-origin: left bottom;
+}
+
+.ln8 {
+    transform: rotate(287deg);
+    transform-origin: left bottom;
+}
+
+.ln9 {
+    transform: rotate(285.3deg);
+    transform-origin: left bottom;
+}
+
+.ln10 {
+    transform: rotate(283.5deg);
+    transform-origin: left bottom;
+}
+
+.ln11 {
+    transform: rotate(282.2deg);
+    transform-origin: left bottom;
+}
+
+.ln12 {
+    transform: rotate(281.3deg);
+    transform-origin: left bottom;
+}
+
+.ln13 {
+    transform: rotate(280.5deg);
+    transform-origin: left bottom;
+}
+
+.ln14 {
+    transform: rotate(279.8deg);
+    transform-origin: left bottom;
+}
+
+.ln15 {
+    transform: rotate(279.2deg);
+    transform-origin: left bottom;
+}

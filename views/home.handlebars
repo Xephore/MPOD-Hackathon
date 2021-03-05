@@ -1,1 +1,337 @@
-<h1>Data Insertion Here!</h1>
+<h1 class="centre">Heart Rate Monitoring</h1>
+<div class="graphs">
+    <div class="graph">
+        <figure class="css-chart" style="--widget-size: 500px;">
+            <figcaption class="centre">Weekly Anxiety Attacks</figcaption>
+            <ul class="line-chart">
+                {{#each weekData}}
+                <li style="--y: 200px; --x: 80px">
+                    {{#if this.lines.angleClass0}}
+                    <div class="line-segment l0" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass1}}
+                    <div class="line-segment l1" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass2}}
+                    <div class="line-segment l2" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass3}}
+                    <div class="line-segment l3" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass4}}
+                    <div class="line-segment l4" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass5}}
+                    <div class="line-segment l5" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass6}}
+                    <div class="line-segment l6" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass7}}
+                    <div class="line-segment l7" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass8}}
+                    <div class="line-segment l8" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass9}}
+                    <div class="line-segment l9" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass10}}
+                    <div class="line-segment l10" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass11}}
+                    <div class="line-segment l11" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass12}}
+                    <div class="line-segment l12" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass13}}
+                    <div class="line-segment l13" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass14}}
+                    <div class="line-segment l14" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass15}}
+                    <div class="line-segment l15" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass16}}
+                    <div class="line-segment ln1" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass17}}
+                    <div class="line-segment ln2" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass18}}
+                    <div class="line-segment ln3" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass19}}
+                    <div class="line-segment ln4" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass20}}
+                    <div class="line-segment ln5" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass21}}
+                    <div class="line-segment ln6" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass22}}
+                    <div class="line-segment ln7" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass23}}
+                    <div class="line-segment ln8" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass24}}
+                    <div class="line-segment ln9" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass25}}
+                    <div class="line-segment ln10" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass26}}
+                    <div class="line-segment ln11" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass27}}
+                    <div class="line-segment ln12" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass28}}
+                    <div class="line-segment ln13" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass29}}
+                    <div class="line-segment ln14" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass30}}
+                    <div class="line-segment ln15" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    <div class="data-point" data-value={{this.Attacks}}
+                        style="bottom: {{this.offsetB}}px; left: {{this.offsetL}}px;"></div>
+                </li>
+                {{/each}}
+            </ul>
+        </figure>
+    </div>
+    <div class="graph">
+        <figure class="css-chart" style="--widget-size: 500px;">
+            <figcaption class="centre">Monthly Anxiety Attacks</figcaption>
+            <ul class="line-chart">
+                {{#each monthData}}
+                <li style="--y: 200px; --x: 80px">
+                    {{#if this.lines.angleClass0}}
+                    <div class="line-segment l0" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass1}}
+                    <div class="line-segment l1" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass2}}
+                    <div class="line-segment l2" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass3}}
+                    <div class="line-segment l3" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass4}}
+                    <div class="line-segment l4" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass5}}
+                    <div class="line-segment l5" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass6}}
+                    <div class="line-segment l6" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass7}}
+                    <div class="line-segment l7" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass8}}
+                    <div class="line-segment l8" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass9}}
+                    <div class="line-segment l9" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass10}}
+                    <div class="line-segment l10" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass11}}
+                    <div class="line-segment l11" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass12}}
+                    <div class="line-segment l12" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass13}}
+                    <div class="line-segment l13" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass14}}
+                    <div class="line-segment l14" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass15}}
+                    <div class="line-segment l15" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass16}}
+                    <div class="line-segment ln1" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass17}}
+                    <div class="line-segment ln2" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass18}}
+                    <div class="line-segment ln3" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass19}}
+                    <div class="line-segment ln4" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass20}}
+                    <div class="line-segment ln5" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass21}}
+                    <div class="line-segment ln6" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass22}}
+                    <div class="line-segment ln7" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass23}}
+                    <div class="line-segment ln8" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass24}}
+                    <div class="line-segment ln9" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass25}}
+                    <div class="line-segment ln10" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass26}}
+                    <div class="line-segment ln11" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass27}}
+                    <div class="line-segment ln12" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass28}}
+                    <div class="line-segment ln13" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass29}}
+                    <div class="line-segment ln14" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    {{#if this.lines.angleClass30}}
+                    <div class="line-segment ln15" id="line"
+                        style="width: {{this.lines.size}}px; bottom: {{this.lines.offsetB}}px; left: {{this.lines.offsetL}}px;">
+                    </div>
+                    {{/if}}
+                    <div class="data-point" data-value={{this.Attacks}}
+                        style="bottom: {{this.offsetB}}px; left: {{this.offsetL}}px;"></div>
+                </li>
+                {{/each}}
+    </div>
+</div>
