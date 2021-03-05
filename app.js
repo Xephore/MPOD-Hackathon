@@ -1,9 +1,19 @@
 const { Router } = require('express');
 const express = require('express');
 const exphbs = require('express-handlebars');
-
+const split = require('split-string');
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
+
+var azure = require('azure-storage');
+const { EventHubConsumerClient } = require("@azure/event-hubs");
+var tableSvc = azure.createTableService
+(X, X);
+const eventHubsCompatibleEndpoint = X;
+const eventHubsCompatiblePath = X;
+const iotHubSasKey = X;
+const connectionString = X;
+var S = require('string');
 
 // Set Handlebars as templating engine
 app.engine('handlebars', exphbs());
@@ -12,11 +22,81 @@ app.set('view engine', 'handlebars');
 app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
+let dataRetrieved = new Array();
+let testvar;
+let num;
+    ///
+    var printError = function (err) {
+        console.log(err.message);
+      };
 
+      var printMessages = function (messages) {
+        for (const message of messages) {
+          console.log("Telemetry received: ");
+          console.log(JSON.stringify(message.body));
+          console.log("Properties (set by device): ");
+          console.log(JSON.stringify(message.properties));
+          console.log("System properties (set by IoT Hub): ");
+          console.log(JSON.stringify(message.systemProperties));
+          console.log("");
+          
+        }
+      };
+    ///
+
+        console.log("Program START. Reading custom heartrate table from azure.");
+      
+        var numberPattern = /\d+/g;
+      var results;
+       var results3;
+       let results4;
+
+        var query = new azure.TableQuery()
+        .select(['description'])
+        .top(1)
+        .where('PartitionKey eq ?', 'heartratePK');
+       
+        tableSvc.queryEntities('heartratetable',query, null, function(error, result, response) {
+            testvar = JSON.stringify(result.entries);
+            results = testvar.match(numberPattern)
+            results2 = S(results).left(3).s;
+            results3 = Number(results2);
+            results4 = Math.round(results3/10 -6);
+            console.log(results4);
+         
+          });
+
+         
+        // tableSvc.queryEntities('heartratetable',query, null, function(error, result, response) {
+        //     console.log(result.entries);
+        //     for(let ded = 0; ded > result.entries.length; ded++){
+        //     dataRetrieved.push(result.entries[ded]);
+        //     }
+        // });
+        
+     
+        //extract the juice from result
+    
+
+        const clientOptions = {
+        
+        };
+      
+        // Create the client to connect to the default consumer group of the Event Hub
+        const consumerClient = new EventHubConsumerClient("$Default", connectionString, clientOptions);
+      
+        // Subscribe to messages from all partitions as below
+        // To subscribe to messages from a single partition, use the overload of the same method.
+        consumerClient.subscribe({
+          processEvents: printMessages,
+          processError: printError,
+        });
+    
+ let varia = 6;
     let graphSize = 500;
     let max = 15;
     let data = [
-        { Attacks: 2, date: "Sunday" },
+        { Attacks: 1, date: "Sunday" },
         { Attacks: 2, date: "Monday" },
         { Attacks: 3, date: "Tuesday" },
         { Attacks: 4, date: "Wednesday" },
@@ -277,6 +357,12 @@ app.get('/', (req, res) => {
     }
     res.render("home", { weekData: data, monthData: mdata });
 });
+
+      
+// main().catch((error) => {
+//     console.error("Error running sample:", error);
+//   });
+  
 
 app.listen(HTTP_PORT, () => {
     console.log(`Web server is listening on Port ${HTTP_PORT}`);
